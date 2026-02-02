@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from groq import Groq
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key="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")
 
 st.title("📧 AI Cold Email Generator")
 
@@ -31,3 +31,4 @@ if st.button("Generate Email"):
     )
 
     st.text_area("Generated Email", response.choices[0].message.content, height=300)
+
